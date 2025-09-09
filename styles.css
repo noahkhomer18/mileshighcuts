@@ -801,6 +801,8 @@ section {
     .hero {
         height: 100vh;
         background-attachment: scroll; /* Better performance on mobile */
+        background-position: center center;
+        background-size: cover;
     }
 
     .hero-content {
@@ -837,6 +839,57 @@ section {
 
     .gallery-item {
         aspect-ratio: 1;
+    }
+
+    /* About section mobile layout */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .about-text {
+        order: 2;
+    }
+
+    .about-image {
+        order: 1;
+        margin-bottom: 1rem;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        order: 3;
+        margin-top: 2rem;
+    }
+
+    .feature {
+        padding: 1.5rem 1rem;
+    }
+
+    .feature i {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .feature h4 {
+        font-size: 1.2rem;
+    }
+
+    /* Contact section mobile layout */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-map {
+        order: 1;
+        margin-bottom: 2rem;
+    }
+
+    .contact-info {
+        order: 2;
     }
 
     .contact-item {
@@ -885,22 +938,9 @@ section {
         justify-content: center;
     }
 
-    .about-features {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .feature {
-        padding: 1.5rem 1rem;
-    }
-
-    .feature i {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-
-    .feature h4 {
-        font-size: 1.2rem;
+    /* Reduce section padding on mobile */
+    section {
+        padding: 3rem 0;
     }
 }
 
