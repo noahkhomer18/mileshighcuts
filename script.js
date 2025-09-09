@@ -374,6 +374,17 @@ if ('IntersectionObserver' in window) {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Mile High Cuts website loaded successfully!');
     
+    // Fix hero background on mobile devices
+    const hero = document.querySelector('.hero');
+    if (hero && window.innerWidth <= 768) {
+        // Force background to load properly on mobile
+        hero.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('IMG_6648.jpeg')`;
+        hero.style.backgroundSize = 'cover';
+        hero.style.backgroundPosition = 'center center';
+        hero.style.backgroundRepeat = 'no-repeat';
+        hero.style.backgroundAttachment = 'scroll';
+    }
+    
     // Add loading animation to hero content
     const heroContent = document.querySelector('.hero-content');
     if (heroContent) {

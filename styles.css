@@ -154,6 +154,17 @@ p {
     position: relative;
 }
 
+/* Mobile hero background fixes */
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+}
+
 .hero-overlay {
     position: absolute;
     top: 0;
