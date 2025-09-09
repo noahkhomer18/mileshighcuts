@@ -951,7 +951,42 @@ section {
 
     /* Reduce section padding on mobile */
     section {
-        padding: 3rem 0;
+        padding: 2rem 0;
+    }
+
+    /* Specific section spacing adjustments */
+    .hero {
+        padding: 0;
+        margin: 0;
+    }
+
+    .about {
+        padding: 2rem 0;
+    }
+
+    .services {
+        padding: 2rem 0;
+    }
+
+    .gallery {
+        padding: 2rem 0;
+    }
+
+    .hours {
+        padding: 2rem 0;
+    }
+
+    .contact {
+        padding: 2rem 0;
+    }
+
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+
+    /* Remove extra margins from section headers */
+    .section-header {
+        margin-bottom: 2rem;
     }
 }
 
@@ -999,6 +1034,53 @@ section {
         flex-direction: column;
         text-align: center;
         gap: 0.5rem;
+    }
+
+    /* About section mobile layout for larger phones */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .about-text {
+        order: 2;
+    }
+
+    .about-image {
+        order: 1;
+        margin-bottom: 1rem;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        order: 3;
+        margin-top: 2rem;
+    }
+
+    /* Contact section mobile layout for larger phones */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-map {
+        order: 1;
+        margin-bottom: 2rem;
+    }
+
+    .contact-info {
+        order: 2;
+    }
+
+    /* Reduce section padding */
+    section {
+        padding: 2.5rem 0;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
     }
 }
 
