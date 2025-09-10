@@ -901,12 +901,15 @@ section {
 
     .contact-info {
         order: 2;
+        text-align: center;
     }
 
     .contact-item {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
+        align-items: center;
+        justify-content: center;
     }
 
     .contact-icon {
@@ -1072,6 +1075,7 @@ section {
 
     .contact-info {
         order: 2;
+        text-align: center;
     }
 
     /* Reduce section padding */
