@@ -36,6 +36,12 @@ window.addEventListener('resize', () => {
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
         document.body.style.overflow = 'auto';
+    } else {
+        // Reset hero transform on mobile to prevent scroll issues
+        const hero = document.querySelector('.hero');
+        if (hero) {
+            hero.style.transform = 'none';
+        }
     }
 });
 
@@ -256,13 +262,16 @@ document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
     }
 });
 
-// Parallax effect for hero section
+// Parallax effect for hero section (disabled on mobile)
 window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        const rate = scrolled * -0.5;
-        hero.style.transform = `translateY(${rate}px)`;
+    // Only apply parallax on desktop to prevent mobile scroll issues
+    if (window.innerWidth > 768) {
+        const scrolled = window.pageYOffset;
+        const hero = document.querySelector('.hero');
+        if (hero) {
+            const rate = scrolled * -0.5;
+            hero.style.transform = `translateY(${rate}px)`;
+        }
     }
 });
 

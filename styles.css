@@ -162,6 +162,19 @@ p {
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 100vh;
+        transform: none !important; /* Prevent any transform issues on mobile */
+        position: relative;
+    }
+    
+    /* Ensure smooth transitions between sections */
+    section {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .about {
+        position: relative;
+        z-index: 2;
     }
 }
 
