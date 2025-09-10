@@ -923,6 +923,20 @@ section {
         gap: 1rem;
         align-items: center;
         justify-content: center;
+        width: 100%;
+    }
+
+    .contact-details {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact-details h4 {
+        text-align: center;
+    }
+
+    .contact-details p {
+        text-align: center;
     }
 
     .contact-icon {
@@ -1088,6 +1102,28 @@ section {
 
     .contact-info {
         order: 2;
+        text-align: center;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact-details {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact-details h4 {
+        text-align: center;
+    }
+
+    .contact-details p {
         text-align: center;
     }
 
